@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>Memory Cards</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main class="game">
+      <header class="game-header">
+        <div>
+          <h1>Memory Cards</h1>
+          <p>Two players. Find the pairs.</p>
+        </div>
+        <button id="restart" class="restart" type="button">New game</button>
+      </header>
+
+      <section class="scoreboard" aria-label="Scores">
+        <div class="player active" id="player-one">
+          <span>Player 1</span>
+          <strong id="score-one">0</strong>
+        </div>
+        <div class="player" id="player-two">
+          <span>Player 2</span>
+          <strong id="score-two">0</strong>
+        </div>
+      </section>
+
+      <div class="game-info">
+        <p id="status" aria-live="polite">Loading game...</p>
+        <p><span id="matched-count">0</span> / 8 pairs</p>
+      </div>
+
+      <section id="board" class="board" aria-label="Memory card board"></section>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
